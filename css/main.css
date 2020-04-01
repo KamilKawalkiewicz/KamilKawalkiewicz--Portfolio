@@ -38,7 +38,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background-image: url(../assets/backgounds/headerBg.png);
+  background-image: url(../assets/backgounds/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -203,7 +203,7 @@ body {
   display: inline-block;
   width: 300px;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -601,6 +601,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-image: url(../assets/backgounds/skills-bg.png);
@@ -608,7 +609,7 @@ body {
 
 .skills .paragraph2 {
   font-size: 1.8rem;
-  margin: 40px 20px 30px 10px;
+  margin: 20px 20px 30px 10px;
   letter-spacing: 3px;
 }
 
@@ -669,6 +670,7 @@ body {
   height: 10px;
   width: 80vw;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../assets/skills/line1.png");
 }
 
@@ -740,6 +742,7 @@ body {
   height: 10px;
   width: 80vw;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../assets/skills/line1.png");
 }
 

@@ -38,11 +38,10 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background-image: url(../assets/backgounds/headerBg.png);
+  background-image: url(../assets/backgounds/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
   &_logo {
     position: absolute;
     top: 35%;
@@ -156,7 +155,7 @@ body {
     display: inline-block;
     width: 300px;
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -408,14 +407,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
   background-image: url(../assets/backgounds/skills-bg.png);
 
   .paragraph2 {
     font-size: 1.8rem;
-    margin: 40px 20px 30px 10px;
+    margin: 20px 20px 30px 10px;
     letter-spacing: 3px;
   }
   & .skill_leftSide {
@@ -449,6 +448,7 @@ body {
       height: 10px;
       width: 80vw;
       background-size: contain;
+      background-repeat: no-repeat;
       background-image: url("../assets/skills/line1.png");
     }
     &-p {
@@ -492,6 +492,7 @@ body {
       height: 10px;
       width: 80vw;
       background-size: contain;
+      background-repeat: no-repeat;
       background-image: url("../assets/skills/line1.png");
     }
     &-p {
