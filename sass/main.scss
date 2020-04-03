@@ -43,6 +43,10 @@ body {
     background-position: center center;
     background-size: 100% 110%;
   }
+  @media (min-width: 1024px) {
+    background-position: center center;
+    background-size: 100% 100%;
+  }
 }
 
 // Header
@@ -110,13 +114,17 @@ body {
     }
     @media (min-width: 1024px) {
       position: fixed;
-      top: 50px;
-      left: 70px;
+      top: 40px;
+      left: 60px;
       height: 70px;
       width: 70px;
       z-index: 2;
     }
-
+    @media (min-width: 1366px) and (min-height: 1024px) {
+      top: 50px;
+      height: 80px;
+      width: 80px;
+    }
     &-a {
       display: block;
       height: 100%;
@@ -133,16 +141,18 @@ body {
     background: var(--black);
     z-index: 1;
     transition: all 0.3s;
-    cursor: pointer;
     @media (min-width: 768px) and (min-height: 1024px) {
       height: 100px;
       transform: translateX(0vw);
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
     }
     @media (min-width: 1024px) {
-      height: 100px;
+      height: 80px;
       transform: translateX(0vw);
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    }
+    @media (min-width: 1366px) and (min-height: 1024px) {
+      height: 100px;
     }
     &.active {
       transform: translateX(0vw);
@@ -180,9 +190,12 @@ body {
           opacity: 1;
         }
         @media (min-width: 1024px) {
-          font-size: 2rem;
+          font-size: 1.9rem;
           margin: 0 20px;
           opacity: 1;
+        }
+        @media (min-width: 1366px) and (min-height: 1024px) {
+          font-size: 2.4rem;
         }
         & a {
           display: flex;
@@ -191,6 +204,7 @@ body {
           position: relative;
           line-height: 15vh;
           color: var(--white);
+          cursor: pointer;
           text-decoration: none;
           @media (min-width: 768px) and (min-height: 1024px) {
             flex-direction: row;
@@ -201,7 +215,18 @@ body {
           @media (min-width: 1024px) {
             flex-direction: row;
             align-items: center;
-            width: 100%;
+            justify-content: center;
+            width: 150px;
+            height: 80px;
+            &:hover {
+              color: var(--activeColor);
+              transition: 0.9s;
+            }
+            &:hover::after {
+              transform: translateX(-50%) scale(1);
+            }
+          }
+          @media (min-width: 1366px) and (min-height: 1024px) {
             height: 100px;
           }
           &::after {
@@ -217,6 +242,16 @@ body {
             filter: blur(2px);
             @media (min-width: 768px) {
               display: none;
+            }
+            @media (min-width: 1024px) {
+              display: flex;
+              height: 2px;
+              width: 100%;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%) scale(0);
+              transform-origin: 50% 50%;
+              transition: transform 0.4s;
             }
             @media (min-width: 533px) and (orientation: landscape) {
               top: 90%;
@@ -337,6 +372,7 @@ body {
       width: 410px;
     }
     @media (min-width: 1024px) {
+      top: 38%;
       width: 500px;
     }
     &-h1 {
@@ -358,6 +394,10 @@ body {
       @media (min-width: 768px) and (min-height: 1024px) {
         font-size: 2.8rem;
         line-height: 40px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 2.7rem;
+        line-height: 60px;
       }
       @media (min-width: 1024px) and (min-height: 1366px) {
         font-size: 3.4rem;
@@ -383,6 +423,12 @@ body {
         @media (min-width: 768px) and (min-height: 1024px) {
           left: 0px;
           width: 400px;
+          animation: move2 8s steps(17) infinite both, cursor 8s linear infinite;
+          animation-delay: 1s;
+        }
+        @media (min-width: 1024px) {
+          height: 62%;
+          width: 500px;
           animation: move2 8s steps(17) infinite both, cursor 8s linear infinite;
           animation-delay: 1s;
         }
@@ -412,6 +458,10 @@ body {
         font-size: 2.5rem;
         line-height: 50px;
       }
+      @media (min-width: 1024px) {
+        font-size: 2.4rem;
+        line-height: 50px;
+      }
       @media (min-width: 1024px) and (min-height: 1366px) {
         font-size: 3rem;
         line-height: 50px;
@@ -429,6 +479,11 @@ body {
         animation-delay: 5s;
         @media (min-width: 768px) and (min-height: 1024px) {
           width: 400px;
+          animation: move2 8s steps(22) infinite both, cursor 8s linear infinite;
+          animation-delay: 5s;
+        }
+        @media (min-width: 1024px) {
+          width: 500px;
           animation: move2 8s steps(22) infinite both, cursor 8s linear infinite;
           animation-delay: 5s;
         }
@@ -474,6 +529,10 @@ body {
         width: 28px;
       }
       @media (min-width: 768px) and (min-height: 1024px) {
+        height: 50px;
+        width: 50px;
+      }
+      @media (min-width: 1024px) {
         height: 50px;
         width: 50px;
       }
@@ -539,8 +598,18 @@ body {
     @media (min-width: 768px) and (min-height: 1024px) {
       height: 70px;
     }
+    @media (min-width: 1024px) {
+      right: 15%;
+      bottom: 10%;
+      height: 60px;
+      width: 250px;
+    }
     @media (min-width: 1024px) and (min-height: 1366px) {
       height: 80px;
+    }
+    @media (min-width: 1366px) and (min-height: 1024px) {
+      height: 100px;
+      width: 380px;
     }
     &-spn {
       display: block;
@@ -585,10 +654,20 @@ body {
         height: 70px;
         line-height: 70px;
       }
+      @media (min-width: 1024px) {
+        font-size: 1.2rem;
+        height: 60px;
+        line-height: 60px;
+      }
       @media (min-width: 1024px) and (min-height: 1366px) {
         font-size: 2rem;
         height: 80px;
         line-height: 80px;
+      }
+      @media (min-width: 1366px) and (min-height: 1024px) {
+        font-size: 2rem;
+        height: 100px;
+        line-height: 100px;
       }
     }
   }
