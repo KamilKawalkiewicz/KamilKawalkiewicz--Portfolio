@@ -39,6 +39,20 @@ body {
   background-position: 5% center;
 }
 
+@media (min-width: 533px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 115%;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 110%;
+  }
+}
+
 .header {
   height: 100vh;
   position: relative;
@@ -100,10 +114,25 @@ body {
   }
 }
 
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_logo {
+    top: 12%;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .header_logo {
+    height: 65px;
+    width: 65px;
+  }
+}
+
 @media (min-width: 768px) and (min-height: 1024px) {
   .header_logo {
     position: fixed;
-    top: 90px;
+    top: 50px;
     left: 70px;
     height: 100px;
     width: 100px;
@@ -114,7 +143,7 @@ body {
 @media (min-width: 1024px) {
   .header_logo {
     position: fixed;
-    top: 90px;
+    top: 50px;
     left: 70px;
     height: 70px;
     width: 70px;
@@ -143,7 +172,7 @@ body {
 
 @media (min-width: 768px) and (min-height: 1024px) {
   .header_nav {
-    height: 180px;
+    height: 100px;
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
@@ -153,7 +182,7 @@ body {
 
 @media (min-width: 1024px) {
   .header_nav {
-    height: 180px;
+    height: 100px;
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
@@ -192,7 +221,7 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 180px;
+    height: 100px;
   }
 }
 
@@ -206,7 +235,7 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    height: 180px;
+    height: 100px;
     padding-right: 50px;
   }
 }
@@ -234,7 +263,7 @@ body {
 
 @media (min-width: 1024px) {
   .header_nav-ul-li {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 0 20px;
     opacity: 1;
   }
@@ -267,7 +296,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 180px;
+    height: 100px;
   }
 }
 
@@ -281,7 +310,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 180px;
+    height: 100px;
   }
 }
 
@@ -307,6 +336,12 @@ body {
 @media (min-width: 768px) {
   .header_nav-ul-li a::after {
     display: none;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_nav-ul-li a::after {
+    top: 90%;
   }
 }
 
@@ -348,6 +383,13 @@ body {
   .header_burger {
     width: 75px;
     height: 55px;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_burger {
+    width: 60px;
+    height: 50px;
   }
 }
 
@@ -393,6 +435,13 @@ body {
   }
 }
 
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_burger.active span:nth-child(1) {
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+  }
+}
+
 .header_burger.active span:nth-child(2) {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
@@ -421,6 +470,13 @@ body {
   .header_burger.active span:nth-child(3) {
     -webkit-transform: translateY(-12px) rotate(-43deg);
             transform: translateY(-12px) rotate(-43deg);
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_burger.active span:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
   }
 }
 
@@ -458,6 +514,12 @@ body {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   text-align: center;
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_text {
+    top: 33%;
+  }
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
@@ -683,6 +745,13 @@ body {
   }
 }
 
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_hooby span {
+    height: 28px;
+    width: 28px;
+  }
+}
+
 @media (min-width: 768px) and (min-height: 1024px) {
   .header_hooby span {
     height: 50px;
@@ -756,6 +825,22 @@ body {
   }
 }
 
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_btn {
+    bottom: 5%;
+    right: 5%;
+    height: 40px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .header_btn {
+    height: 50px;
+    width: 170px;
+  }
+}
+
 @media (min-width: 768px) and (min-height: 1024px) {
   .header_btn {
     height: 70px;
@@ -811,6 +896,22 @@ body {
 @media (min-width: 414px) and (min-height: 736px) {
   .header_btn-spn {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .header_btn-spn {
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .header_btn-spn {
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8rem;
   }
 }
 
