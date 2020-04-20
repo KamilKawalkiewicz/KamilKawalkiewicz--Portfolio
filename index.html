@@ -1,144 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <!-- <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <!-- <link
       href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Oswald:300,400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     /> -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Oswald:300,400,700|Sigmar+One&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header_logo">
-        <a class="header_logo-a" href="#"></a>
-      </div>
-      <nav class="header_nav">
-        <ul class="header_nav-ul">
-          <li class="header_nav-ul-li"><a href="#">Skills</a></li>
-          <li class="header_nav-ul-li"><a href="#">Projects</a></li>
-          <li class="header_nav-ul-li"><a href="#">About me</a></li>
-          <li class="header_nav-ul-li"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header_burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="header_text">
-        <h1 class="header_text-h1">Kamil Kawalkiewicz</h1>
-        <h2 class="header_text-h2">Frontend Developer</h2>
-      </div>
-      <aside class="header_hooby">
-        <span class="header_hooby-svg1"></span>
-        <span class="header_hooby-svg2"></span>
-        <span class="header_hooby-svg3"></span>
-        <span class="header_hooby-svg4"></span>
-        <span class="header_hooby-svg5"></span>
-      </aside>
-      <button class="header_btn">
-        <span class="header_btn-spn">Watch my Projects</span>
-      </button>
-    </header>
-    <!--Skills section -->
-    <section class="skills">
-      <h2 class="txt-h2">Skills</h2>
+  <link
+    href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Oswald:300,400,700|Sigmar+One&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-      <div class="skill_leftSide">
-        <div class="skill_leftSide-icon">
-          <img
-            src="./assets/skills/html-5.svg"
-            class="skill_leftSide-icon-img"
-          />
-          <span class="skill_leftSide-icon-span"><strong>BEM</strong></span>
-          <img
-            src="./assets/skills/css-3.svg"
-            class="skill_leftSide-icon-img"
-          />
-          <span class="skill_leftSide-icon-span">AND</span>
-          <img src="./assets/skills/sass.svg" class="skill_leftSide-icon-img" />
-        </div>
-        <span class="skill_leftSide-line"></span>
-        <p class="skill_leftSide-p">ALL of that is a basic of my project</p>
-      </div>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header_logo">
+      <a class="header_logo-a" href="#"></a>
+    </div>
+    <nav class="header_nav">
+      <ul class="header_nav-ul">
+        <li class="header_nav-ul-li"><a href="#">Skills</a></li>
+        <li class="header_nav-ul-li"><a href="#">Projects</a></li>
+        <li class="header_nav-ul-li"><a href="#">About me</a></li>
+        <li class="header_nav-ul-li"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header_burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header_text">
+      <h1 class="header_text-h1"></h1>
+      <span class="cursor">|</span>
 
-      <div class="skill_rightSide">
-        <div class="skill_rightSide-icon">
-          <span class="skill_rightSide-icon-span"
-            ><strong>styled-components</strong></span
-          >
-          <img
-            src="./assets/skills/react.svg"
-            class="skill_rightSide-icon-img"
-          />
-          <span class="skill_rightSide-icon-span"><strong>ES7</strong></span>
-          <img
-            src="./assets/skills/javascript.svg"
-            class="skill_rightSide-icon-img"
-          />
-        </div>
-        <span class="skill_rightSide-line"></span>
-        <p class="skill_rightSide-p">
-          LIKE working with JS especially React.js
-        </p>
-      </div>
+    </div>
+    <aside class="header_hooby">
+      <span class="header_hooby-svg1"></span>
+      <span class="header_hooby-svg2"></span>
+      <span class="header_hooby-svg3"></span>
+      <span class="header_hooby-svg4"></span>
+      <span class="header_hooby-svg5"></span>
+    </aside>
+    <button class="header_btn">
+      <span class="header_btn-spn">Watch my Projects</span>
+    </button>
+  </header>
+  <!--Skills section -->
+  <section class="skills">
+    <h2 class="txt-h2">Skills</h2>
 
-      <div class="skill_leftSide">
-        <div class="skill_leftSide-icon">
-          <img
-            src="./assets/skills/redux.svg"
-            class="skill_leftSide-icon-img"
-          />
-          <span class="skill_leftSide-icon-span"><strong>Bacis</strong></span>
-          <img
-            src="./assets/skills/photoShop.svg"
-            class="skill_leftSide-icon-img"
-          />
-          <span class="skill_leftSide-icon-span"><strong>Bacis</strong></span>
-          <img
-            src="./assets/skills/mysql.svg"
-            class="skill_leftSide-icon-img"
-          />
-        </div>
-        <span class="skill_leftSide-line"></span>
-        <p class="skill_leftSide-p">
-          Basic knowledge about Redux ang MySQL and PhotoShop
-        </p>
+    <div class="skill_leftSide">
+      <div class="skill_leftSide-icon">
+        <img src="./assets/skills/html-5.svg" class="skill_leftSide-icon-img" />
+        <span class="skill_leftSide-icon-span"><strong>BEM</strong></span>
+        <img src="./assets/skills/css-3.svg" class="skill_leftSide-icon-img" />
+        <span class="skill_leftSide-icon-span">AND</span>
+        <img src="./assets/skills/sass.svg" class="skill_leftSide-icon-img" />
       </div>
+      <span class="skill_leftSide-line"></span>
+      <p class="skill_leftSide-p">ALL of that is a basic of my project</p>
+    </div>
 
-      <div class="skill_rightSide">
-        <div class="skill_rightSide-icon">
-          <img
-            src="./assets/skills/webpack.svg"
-            class="skill_rightSide-icon-img"
-          />
-          <img
-            src="./assets/skills/git-icon.svg"
-            class="skill_rightSide-icon-img"
-          />
-          <img src="./assets/skills/npm.svg" class="skill_rightSide-icon-img" />
-        </div>
-        <span class="skill_rightSide-line"></span>
-        <p class="skill_rightSide-p">
-          Webpack, GIT and NPM its also very usefull in projects
-        </p>
+    <div class="skill_rightSide">
+      <div class="skill_rightSide-icon">
+        <span class="skill_rightSide-icon-span"
+            ><strong>styled-components</strong></span>
+        <img src="./assets/skills/react.svg" class="skill_rightSide-icon-img" />
+        <span class="skill_rightSide-icon-span"><strong>ES7</strong></span>
+        <img src="./assets/skills/javascript.svg" class="skill_rightSide-icon-img" />
       </div>
-    </section>
-    <!--Skills end section -->
-    <script src="./actions/eventClick.js"></script>
-  </body>
+      <span class="skill_rightSide-line"></span>
+      <p class="skill_rightSide-p">
+        LIKE working with JS especially React.js
+      </p>
+    </div>
+
+    <div class="skill_leftSide">
+      <div class="skill_leftSide-icon">
+        <img src="./assets/skills/redux.svg" class="skill_leftSide-icon-img" />
+        <span class="skill_leftSide-icon-span"><strong>Bacis</strong></span>
+        <img src="./assets/skills/photoShop.svg" class="skill_leftSide-icon-img" />
+        <span class="skill_leftSide-icon-span"><strong>Bacis</strong></span>
+        <img src="./assets/skills/mysql.svg" class="skill_leftSide-icon-img" />
+      </div>
+      <span class="skill_leftSide-line"></span>
+      <p class="skill_leftSide-p">
+        Basic knowledge about Redux ang MySQL and PhotoShop
+      </p>
+    </div>
+
+    <div class="skill_rightSide">
+      <div class="skill_rightSide-icon">
+        <img src="./assets/skills/webpack.svg" class="skill_rightSide-icon-img" />
+        <img src="./assets/skills/git-icon.svg" class="skill_rightSide-icon-img" />
+        <img src="./assets/skills/npm.svg" class="skill_rightSide-icon-img" />
+      </div>
+      <span class="skill_rightSide-line"></span>
+      <p class="skill_rightSide-p">
+        Webpack, GIT and NPM its also very usefull in projects
+      </p>
+    </div>
+  </section>
+  <!--Skills end section -->
+  <script src="./actions/index.js"></script>
+  <script src="./actions/eventClick.js"></script>
+</body>
+
 </html>
