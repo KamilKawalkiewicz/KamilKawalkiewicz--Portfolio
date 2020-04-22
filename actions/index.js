@@ -1,6 +1,6 @@
 
 const h1Text = document.querySelector('.header_text-h1');
-const spnCursor = document.querySelector('.cursor');
+const spnCursor = document.querySelector('.header_text-cursor');
 const txt = ["Hire Me", 'Kamil Kawałkiewicz Frontend Developer']
 
 let activeLetter = -10;

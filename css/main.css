@@ -742,10 +742,12 @@
 }
 
 .header_text-h1 {
-  display: inline;
+  display: inline-block;
   font-weight: bold;
   font-size: 1.4rem;
+  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: var(--white);
   text-shadow: 0px 0px 4px var(--white);
 }
@@ -786,8 +788,7 @@
   }
 }
 
-.header_text .cursor {
-  display: inline-block;
+.header_text-cursor {
   position: relative;
   bottom: 2px;
   font-size: 1.8rem;
@@ -798,40 +799,40 @@
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
-  .header_text .cursor {
+  .header_text-cursor {
     font-size: 2rem;
     bottom: 4px;
   }
 }
 
 @media (min-width: 411px) and (min-height: 823px) {
-  .header_text .cursor {
+  .header_text-cursor {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
-  .header_text .cursor {
+  .header_text-cursor {
     font-size: 2.8rem;
     bottom: 7px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header_text .cursor {
+  .header_text-cursor {
     font-size: 3.2rem;
     bottom: 6px;
   }
 }
 
 @media (min-width: 1024px) and (min-height: 1366px) {
-  .header_text .cursor {
+  .header_text-cursor {
     font-size: 4rem;
     bottom: 9px;
   }
 }
 
-.header_text .cursor.active {
+.header_text-cursor.active {
   opacity: 1;
 }
 
@@ -1171,8 +1172,8 @@ body {
 }
 
 .txt-h2 {
-  font-size: 1.8rem;
-  margin: 20px 20px 30px 10px;
+  font-size: 2.5rem;
+  margin: 20px 20px 30px 20px;
   letter-spacing: 3px;
   -webkit-animation-name: shadowAnimation;
           animation-name: shadowAnimation;
@@ -1186,8 +1187,32 @@ body {
           animation-timing-function: ease-in-out;
 }
 
+@media (min-width: 411px) and (min-height: 823px) {
+  .txt-h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .txt-h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .txt-h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .txt-h2 {
+    font-size: 4rem;
+  }
+}
+
 .skills {
-  min-height: 140vh;
+  min-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1195,6 +1220,44 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: .7rem;
+  overflow-x: hidden;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    font-size: 1.5rem;
+  }
 }
 
 .skills .skill_leftSide {
@@ -1209,6 +1272,12 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 10px 5px;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_leftSide {
+    margin: 20px 5px;
+  }
 }
 
 .skills .skill_leftSide-icon {
@@ -1228,9 +1297,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45px;
-  width: 35px;
+  height: 50px;
+  width: 40px;
   margin: 5px;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_leftSide-icon-span {
+    height: 58px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills .skill_leftSide-icon-span {
+    height: 55px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_leftSide-icon-span {
+    height: 65px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_leftSide-icon-span {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_leftSide-icon-span {
+    height: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_leftSide-icon-span {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .skills .skill_leftSide-icon-img {
@@ -1243,11 +1351,54 @@ body {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   margin: 5px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_leftSide-icon-img {
+    height: 58px;
+    width: 58px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills .skill_leftSide-icon-img {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_leftSide-icon-img {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_leftSide-icon-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_leftSide-icon-img {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_leftSide-icon-img {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .skills .skill_leftSide-line {
@@ -1259,10 +1410,66 @@ body {
   background-image: url("../assets/skills/leftLine.png");
 }
 
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_leftSide-line {
+    position: relative;
+    left: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_leftSide-line {
+    position: relative;
+    left: -70px;
+  }
+}
+
 .skills .skill_leftSide-p {
-  font-size: 0.7rem;
+  font-size: .9rem;
   margin: 5px 10px;
   letter-spacing: 0.6px;
+}
+
+@media (min-width: 360px) and (min-height: 640px) {
+  .skills .skill_leftSide-p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_leftSide-p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills .skill_leftSide-p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_leftSide-p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_leftSide-p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_leftSide-p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_leftSide-p {
+    font-size: 1.6rem;
+  }
 }
 
 .skills .skill_rightSide {
@@ -1277,6 +1484,12 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 10px 5px;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide {
+    margin: 20px 5px;
+  }
 }
 
 .skills .skill_rightSide-icon {
@@ -1296,14 +1509,72 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45px;
-  width: 35px;
+  height: 50px;
+  width: 40px;
   margin: 5px;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_rightSide-icon-span {
+    height: 58px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills .skill_rightSide-icon-span {
+    height: 55px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_rightSide-icon-span {
+    height: 65px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide-icon-span {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-span {
+    height: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-icon-span {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .skills .skill_rightSide-icon-span:nth-of-type(1) {
   text-align: center;
   width: 70px;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide-icon-span:nth-of-type(1) {
+    width: 120px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-span:nth-of-type(1) {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-icon-span:nth-of-type(1) {
+    width: 140px;
+  }
 }
 
 .skills .skill_rightSide-icon-img {
@@ -1316,11 +1587,54 @@ body {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   margin: 5px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_rightSide-icon-img {
+    height: 58px;
+    width: 58px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 731px) {
+  .skills .skill_rightSide-icon-img {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_rightSide-icon-img {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide-icon-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-img {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-icon-img {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .skills .skill_rightSide-line {
@@ -1332,9 +1646,59 @@ body {
   background-image: url("../assets/skills/rightLine.png");
 }
 
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide-line {
+    position: relative;
+    right: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-line {
+    position: relative;
+    right: -70px;
+  }
+}
+
 .skills .skill_rightSide-p {
-  font-size: 0.7rem;
+  font-size: .9rem;
   margin: 0px 10px;
   letter-spacing: 0.6px;
+}
+
+@media (min-width: 360px) and (min-height: 640px) {
+  .skills .skill_rightSide-p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .skills .skill_rightSide-p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .skills .skill_rightSide-p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .skills .skill_rightSide-p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-p {
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
