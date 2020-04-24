@@ -698,7 +698,7 @@
 }
 
 .header_text {
-  display: inline-block;
+  display: block;
   width: 260px;
   position: absolute;
   top: 42%;
@@ -742,7 +742,7 @@
 }
 
 .header_text-h1 {
-  display: inline-block;
+  display: inline;
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
@@ -789,6 +789,7 @@
 }
 
 .header_text-cursor {
+  display: inline-block;
   position: relative;
   bottom: 2px;
   font-size: 1.8rem;
@@ -1109,68 +1110,6 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-:root {
-  --activeColor: rgba(255, 255, 0, 1);
-  --backgroundTxtAnim: rgb(0, 0, 0);
-  --black: rgb(36, 36, 36);
-  --white: rgb(241, 240, 240);
-  --color-blue: #0c2ffb;
-  --color-aqua: #2cfcfd;
-  --color-red: #fb203b;
-  --color-yellow: #fefc4b;
-}
-
-html {
-  font-family: "Merriweather", serif;
-}
-
-h1 {
-  font-family: "Oswald";
-}
-
-h2 {
-  font-family: "Sigmar One", cursive;
-}
-
-body {
-  overflow-x: hidden;
-  font-size: 10px;
-  position: relative;
-  margin: 0 auto;
-  background-image: url(../assets/backgounds/main-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 5% center;
-}
-
-@media (min-width: 533px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 115%;
-  }
-}
-
-@media (min-width: 731px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 110%;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-position: center center;
-    background-size: 100% 100%;
-  }
-}
-
 .txt-h2 {
   font-size: 2.5rem;
   margin: 20px 20px 30px 20px;
@@ -1199,15 +1138,15 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  .txt-h2 {
-    font-size: 5rem;
-  }
-}
-
 @media (min-width: 1024px) {
   .txt-h2 {
     font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .txt-h2 {
+    font-size: 5rem;
   }
 }
 
@@ -1248,15 +1187,15 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
+@media (min-width: 1024px) {
   .skills {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 1366px) {
   .skills {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1284,7 +1223,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px;
 }
 
 .skills .skill_leftSide-icon-span {
@@ -1328,16 +1266,16 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
+@media (min-width: 1024px) {
   .skills .skill_leftSide-icon-span {
-    height: 110px;
+    height: 75px;
+    width: 75px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 1366px) {
   .skills .skill_leftSide-icon-span {
-    height: 80px;
-    width: 80px;
+    height: 110px;
   }
 }
 
@@ -1387,6 +1325,13 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .skills .skill_leftSide-icon-img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
 @media (min-width: 1024px) and (min-height: 1366px) {
   .skills .skill_leftSide-icon-img {
     height: 110px;
@@ -1394,16 +1339,11 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .skills .skill_leftSide-icon-img {
-    height: 80px;
-    width: 80px;
-  }
-}
-
 .skills .skill_leftSide-line {
   height: 30px;
-  width: 80vw;
+  width: 170vw;
+  position: relative;
+  left: -10px;
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 50% 100%;
@@ -1420,7 +1360,7 @@ body {
 @media (min-width: 1024px) {
   .skills .skill_leftSide-line {
     position: relative;
-    left: -70px;
+    left: -90px;
   }
 }
 
@@ -1460,15 +1400,15 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  .skills .skill_leftSide-p {
-    font-size: 2.2rem;
-  }
-}
-
 @media (min-width: 1024px) {
   .skills .skill_leftSide-p {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_leftSide-p {
+    font-size: 2.2rem;
   }
 }
 
@@ -1540,16 +1480,16 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  .skills .skill_rightSide-icon-span {
-    height: 110px;
-  }
-}
-
 @media (min-width: 1024px) {
   .skills .skill_rightSide-icon-span {
     height: 80px;
     width: 80px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-span {
+    height: 110px;
   }
 }
 
@@ -1565,15 +1505,15 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  .skills .skill_rightSide-icon-span:nth-of-type(1) {
-    width: 160px;
-  }
-}
-
 @media (min-width: 1024px) {
   .skills .skill_rightSide-icon-span:nth-of-type(1) {
     width: 140px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-span:nth-of-type(1) {
+    width: 160px;
   }
 }
 
@@ -1623,17 +1563,17 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 1366px) {
-  .skills .skill_rightSide-icon-img {
-    height: 110px;
-    width: 110px;
-  }
-}
-
 @media (min-width: 1024px) {
   .skills .skill_rightSide-icon-img {
     height: 80px;
     width: 80px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .skills .skill_rightSide-icon-img {
+    height: 110px;
+    width: 110px;
   }
 }
 
@@ -1690,15 +1630,117 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .skills .skill_rightSide-p {
+    font-size: 1.6rem;
+  }
+}
+
 @media (min-width: 1024px) and (min-height: 1366px) {
   .skills .skill_rightSide-p {
     font-size: 2.2rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .skills .skill_rightSide-p {
-    font-size: 1.6rem;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --activeColor: rgba(255, 255, 0, 1);
+  --backgroundTxtAnim: rgb(0, 0, 0);
+  --black: rgb(36, 36, 36);
+  --white: rgb(241, 240, 240);
+  --color-blue: #0c2ffb;
+  --color-aqua: #2cfcfd;
+  --color-red: #fb203b;
+  --color-yellow: #fefc4b;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-family: "Oswald";
+}
+
+h2 {
+  font-family: "Sigmar One", cursive;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 10px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../assets/backgounds/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% center;
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 115%;
   }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 110%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+}
+
+.projects .cardLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.projects .cardLeft .card_front {
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.projects .cardLeft .card_front-img {
+  background-image: url("../assets/projects/game.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.projects .cardLeft_back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */
