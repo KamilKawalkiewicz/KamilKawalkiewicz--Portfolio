@@ -1112,7 +1112,7 @@
 
 .txt-h2 {
   font-size: 2.5rem;
-  margin: 20px 20px 30px 20px;
+  margin: 20px 20px;
   letter-spacing: 3px;
   -webkit-animation-name: shadowAnimation;
           animation-name: shadowAnimation;
@@ -1141,6 +1141,7 @@
 @media (min-width: 1024px) {
   .txt-h2 {
     font-size: 4rem;
+    margin: 80px 20px 100px;
   }
 }
 
@@ -1161,6 +1162,7 @@
           flex-direction: column;
   font-size: .7rem;
   overflow-x: hidden;
+  text-shadow: 0px 1px 6px black;
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
@@ -1210,12 +1212,12 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 10px 5px;
+  margin: 20px 5px;
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
   .skills .skill_leftSide {
-    margin: 20px 5px;
+    margin: 15px 5px;
   }
 }
 
@@ -1423,7 +1425,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 10px 5px;
+  margin: 15px 5px;
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
@@ -1704,7 +1706,7 @@ body {
   }
 }
 
-.projects .cardLeft {
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1712,35 +1714,103 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
-  height: 250px;
+  font-size: .7rem;
+  min-height: 100vh;
+}
+
+.projects_card {
   width: 300px;
+  height: 380px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.projects_card-front, .projects_card-back {
+  width: 300px;
+  height: 380px;
+  position: absolute;
   overflow: hidden;
-}
-
-.projects .cardLeft .card_front {
-  height: 100%;
-  width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .6s linear;
+  transition: -webkit-transform .6s linear;
+  transition: transform .6s linear;
+  transition: transform .6s linear, -webkit-transform .6s linear;
+  -webkit-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
-.projects .cardLeft .card_front-img {
-  background-image: url("../assets/projects/game.png");
+.projects_card-front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.projects_card-front-img {
+  background: url("../assets/projects/weatherApp.png");
   height: 100%;
-  width: 100%;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.projects .cardLeft_back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+.projects_card-back {
+  text-align: center;
+  background: #f1f1f1;
+  color: #2c3e50;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.projects_card-back-title {
+  margin: 30px;
+  text-shadow: 0px 2px 7px black;
+}
+
+.projects_card-back-txt {
+  font-size: 1rem;
+  margin: 40px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 7px black;
+}
+
+.projects_card-back-icon {
+  margin: 20px 0;
+}
+
+.projects_card-back-icon i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin: 5px;
+  color: #2c3e50;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+  text-transform: none;
+}
+
+.projects_card-back-icon i:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+.projects_card:hover > .projects_card-front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.projects_card:hover > .projects_card-back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
 }
 /*# sourceMappingURL=main.css.map */

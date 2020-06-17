@@ -6,10 +6,10 @@
 // font-family: 'Oswald', sans-serif;
 
 @import "reset";
-@import "menu";
 @import "animation";
 @import "header";
 @import "skills";
+
 * {
   margin: 0;
   padding: 0;
@@ -59,49 +59,81 @@ body {
     background-size: 100% 100%;
   }
 }
+
+
 .projects{
-  // height: 100vh;
-  .cardLeft{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    height: 250px;
+  display: flex;
+  flex-direction: column;
+  font-size: .7rem;
+  min-height: 100vh;
+
+  &_card{
     width: 300px;
-    overflow: hidden;
-    .card_front{
-      height: 100%;
-      width: 100%;
+    height: 380px;
+    margin:40px auto;
+    cursor: pointer;
+    &-front,&-back{
+      width: 300px;
+      height: 380px;
+      position: absolute;
+      overflow: hidden;
       backface-visibility: hidden;
+      transition: transform .6s linear;
+      box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+    }
+    &-front{
+      transform: perspective(600px) rotateY(0deg);
       &-img{
-        background-image: url("../assets/projects/game.png");
+        background: url("../assets/projects/weatherApp.png");
         height: 100%;
-        width: 100%;
+        background-position: center center;
         background-size: cover;
+        background-repeat: no-repeat;
       }
     }
-    &_back{
-      display: flex;
-      flex-direction: column;
-      backface-visibility: hidden;
-      &-content{
-
-        &-h2{
-
-        }
-        &-p{
-
-        }
-        &-icon{
-          &-github{
-
-          }
-          &-live{
-
+    &-back{
+      text-align: center;
+      background: #f1f1f1;
+      color: #2c3e50;
+      transform: perspective(600px) rotateY(180deg);
+      &-title{
+        margin: 30px;
+        text-shadow: 0px 2px 7px black;
+      }
+      &-txt{
+        font-size: 1rem;
+        margin: 40px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-shadow: 0px 2px 7px black;
+      }
+      &-icon{
+        margin: 20px 0;
+        & i{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          font-size: 30px;
+          margin: 5px;
+          color: #2c3e50;
+          transition: 0.4s;
+          border-radius: 50%;
+          text-transform: none;
+          &:hover{
+            background: #2c3e50;
+            color: white;
           }
         }
       }
     }
   }
-
+  &_card:hover > .projects_card-front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  &_card:hover > .projects_card-back{
+    transform: perspective(600px) rotateY(0deg);
+  }
 }
 
