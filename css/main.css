@@ -1162,7 +1162,6 @@
           flex-direction: column;
   font-size: .7rem;
   overflow-x: hidden;
-  text-shadow: 0px 1px 6px black;
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
@@ -1707,6 +1706,11 @@ body {
 }
 
 .projects {
+  font-size: .7rem;
+  min-height: 100vh;
+}
+
+.projects .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1714,20 +1718,77 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: .7rem;
-  min-height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .projects_card {
   width: 300px;
   height: 380px;
-  margin: 40px auto;
+  margin: 10px auto;
   cursor: pointer;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card {
+    width: 300px;
+    height: 430px;
+  }
+}
+
+@media (min-width: 411px) {
+  .projects_card {
+    height: 400px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .projects_card {
+    width: 320px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card {
+    width: 340px;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects_card {
+    margin: 35px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .projects_card {
+    margin: 60px;
+    width: 390px;
+  }
 }
 
 .projects_card-front, .projects_card-back {
   width: 300px;
-  height: 380px;
   position: absolute;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
@@ -1740,13 +1801,101 @@ body {
           box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
+@media (min-width: 411px) and (min-height: 823px) {
+  .projects_card-front, .projects_card-back {
+    width: 320px;
+  }
+}
+
 .projects_card-front {
+  height: 380px;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
 
-.projects_card-front-img {
-  background: url("../assets/projects/weatherApp.png");
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card-front {
+    width: 300px;
+    height: 430px;
+  }
+}
+
+@media (min-width: 411px) {
+  .projects_card-front {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .projects_card-front {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card-front {
+    width: 340px;
+    height: 470px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects_card-front {
+    height: 470px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .projects_card-front {
+    height: 470px;
+    width: 400px;
+  }
+}
+
+.projects_card-front-img1 {
+  background: url("../assets/projects/Deejee.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_card-front-img2 {
+  background: url("../assets/projects/PokemonApi.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_card-front-img3 {
+  background: url("../assets/projects/PhotoX.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_card-front-img4 {
+  background: url("../assets/projects/WeatherApp.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_card-front-img5 {
+  background: url("../assets/projects/PhysiotherapySide.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_card-front-img6 {
+  background: url("../assets/projects/NotesPHP.png");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1761,24 +1910,101 @@ body {
           transform: perspective(600px) rotateY(180deg);
 }
 
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card-back {
+    width: 300px;
+    height: 430px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .projects_card-back {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card-back {
+    width: 340px;
+    height: 470px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects_card-back {
+    height: 470px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .projects_card-back {
+    height: 470px;
+    width: 400px;
+  }
+}
+
 .projects_card-back-title {
-  margin: 30px;
-  text-shadow: 0px 2px 7px black;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card-back-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+  .projects_card-back-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card-back-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects_card-back-title {
+    height: 450px;
+    width: 400px;
+  }
 }
 
 .projects_card-back-txt {
   font-size: 1rem;
-  margin: 40px;
+  margin: 10px;
   line-height: 20px;
   letter-spacing: 1px;
   text-shadow: 0px 2px 7px black;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card-back-txt {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 411px) {
+  .projects_card-back-txt {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card-back-txt {
+    font-size: 1.4rem;
+  }
 }
 
 .projects_card-back-icon {
   margin: 20px 0;
 }
 
-.projects_card-back-icon i {
+.projects_card-back-icon a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1791,15 +2017,35 @@ body {
   width: 40px;
   height: 40px;
   font-size: 30px;
-  margin: 5px;
-  color: #2c3e50;
+  margin: 5px 10px;
+  color: #2f4963;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
-  text-transform: none;
 }
 
-.projects_card-back-icon i:hover {
+@media (min-width: 375px) and (min-height: 812px) {
+  .projects_card-back-icon a {
+    font-size: 2.5rem;
+    margin: 5px 15px;
+  }
+}
+
+@media (min-width: 411px) {
+  .projects_card-back-icon a {
+    font-size: 2.6rem;
+    margin: 5px 20px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .projects_card-back-icon a {
+    font-size: 3.2rem;
+    margin: 10px 30px;
+  }
+}
+
+.projects_card-back-icon a:hover {
   background: #2c3e50;
   color: white;
 }
