@@ -274,10 +274,10 @@ body {
       }
     }
   }
-  &_card:hover > .projects_card-front{
+  &_card:hover .projects_card-front{
     transform: perspective(600px) rotateY(-180deg);
   }
-  &_card:hover > .projects_card-back{
+  &_card:hover .projects_card-back{
     transform: perspective(600px) rotateY(0deg);
   }
 
