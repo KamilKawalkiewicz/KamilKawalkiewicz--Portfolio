@@ -52,9 +52,10 @@ const moveImage = document.querySelector(".projects_card-front-img1");
 
 
 
-moveImage.addEventListener('touchmove', function(){
+moveImage.addEventListener('touchstart', function(){
    
     this.style.width = '10px';
+    this.style.transition = "2s";
     console.log('ok')
 })
 moveImage.addEventListener('touchend', function(){
