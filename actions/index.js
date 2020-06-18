@@ -1,4 +1,6 @@
 
+// Text animation
+
 const h1Text = document.querySelector('.header_text-h1');
 const spnCursor = document.querySelector('.header_text-cursor');
 const txt = ["Hire Me", 'Kamil Kawałkiewicz Frontend Developer']
@@ -28,3 +30,39 @@ const cursorAnimation = () => {
     spnCursor.classList.toggle('active');
 }
 setInterval(cursorAnimation, 400);
+
+
+
+// active animation burger and show menu
+
+document.querySelector(".header_burger").addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.querySelector(".header_nav").classList.toggle("active");
+  
+    [...document.querySelectorAll(".header_nav-ul-li")].forEach((li, id) => {
+      if (li.style.animation) {
+        li.style.animation = "";
+      } else {
+        li.style.animation = `menu-links-fade .5s ease forwards ${id / 8}s`;
+      }
+    });
+  });
+
+const moveImage = document.querySelector(".projects_card-front-img1"); 
+
+
+
+// $(moveImage).mouseover(function() {
+//     $( this ).fade("active")
+//   })
+//   .mouseout(function() {
+//     $( this ).find( "span" ).text( "mouse out " );
+//   });
+
+$(document).ready(function(){
+    $(moveImage).hover(function(){
+        $(this).css("width", "0px");
+      }, function(){
+      $(this).css("width", "100%");
+    });
+  });
