@@ -2050,13 +2050,17 @@ body {
   color: white;
 }
 
-.projects_card:hover .projects_card-front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+@media (hover) {
+  .projects_card:hover .projects_card-front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(-180deg);
+  }
 }
 
-.projects_card:hover .projects_card-back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+@media (hover) {
+  .projects_card:hover .projects_card-back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+            transform: perspective(600px) rotateY(0deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

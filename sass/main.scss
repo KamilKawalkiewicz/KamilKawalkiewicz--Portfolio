@@ -274,12 +274,13 @@ body {
       }
     }
   }
-  &_card:hover .projects_card-front{
-    transform:  rotateY(-180deg);
+  @media (hover) {&_card:hover .projects_card-front {
+    transform: perspective(600px) rotateY(-180deg);
   }
-  &_card:hover .projects_card-back{
-    transform:  rotateY(0deg);
   }
-
+  @media (hover) {&_card:hover .projects_card-back {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  }
 }
 
