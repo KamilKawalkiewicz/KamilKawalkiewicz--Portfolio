@@ -142,42 +142,42 @@ body {
         }
       transform: perspective(600px) rotateY(0deg);
       &-img1{
-        background: url("../assets/projects/Deejee.png");
+        background: url("../assets/projects/Deejee.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-img2{
-        background: url("../assets/projects/PokemonApi.png");
+        background: url("../assets/projects/PokeApi.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-img3{
-        background: url("../assets/projects/PhotoX.png");
+        background: url("../assets/projects/PhotoX.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-img4{
-        background: url("../assets/projects/WeatherApp.png");
+        background: url("../assets/projects/WeatherApp.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-img5{
-        background: url("../assets/projects/PhysiotherapySide.png");
+        background: url("../assets/projects/PhysioTherapySide.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
       }
       &-img6{
-        background: url("../assets/projects/NotesPHP.png");
+        background: url("../assets/projects/NotesPHP.jpg");
         height: 100%;
         background-position: center center;
         background-size: cover;
@@ -274,13 +274,12 @@ body {
       }
     }
   }
-  @media (hover) {&_card:hover .projects_card-front {
+  &_card:hover .projects_card-front{
     transform: perspective(600px) rotateY(-180deg);
   }
-  }
-  @media (hover) {&_card:hover .projects_card-back {
+  &_card:hover .projects_card-back{
     transform: perspective(600px) rotateY(0deg);
   }
-  }
+
 }
 

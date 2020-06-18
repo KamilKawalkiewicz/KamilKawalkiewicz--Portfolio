@@ -1855,7 +1855,7 @@ body {
 }
 
 .projects_card-front-img1 {
-  background: url("../assets/projects/Deejee.png");
+  background: url("../assets/projects/Deejee.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1863,7 +1863,7 @@ body {
 }
 
 .projects_card-front-img2 {
-  background: url("../assets/projects/PokemonApi.png");
+  background: url("../assets/projects/PokeApi.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1871,7 +1871,7 @@ body {
 }
 
 .projects_card-front-img3 {
-  background: url("../assets/projects/PhotoX.png");
+  background: url("../assets/projects/PhotoX.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1879,7 +1879,7 @@ body {
 }
 
 .projects_card-front-img4 {
-  background: url("../assets/projects/WeatherApp.png");
+  background: url("../assets/projects/WeatherApp.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1887,7 +1887,7 @@ body {
 }
 
 .projects_card-front-img5 {
-  background: url("../assets/projects/PhysiotherapySide.png");
+  background: url("../assets/projects/PhysioTherapySide.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -1895,7 +1895,7 @@ body {
 }
 
 .projects_card-front-img6 {
-  background: url("../assets/projects/NotesPHP.png");
+  background: url("../assets/projects/NotesPHP.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -2050,17 +2050,13 @@ body {
   color: white;
 }
 
-@media (hover) {
-  .projects_card:hover .projects_card-front {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-            transform: perspective(600px) rotateY(-180deg);
-  }
+.projects_card:hover .projects_card-front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
 }
 
-@media (hover) {
-  .projects_card:hover .projects_card-back {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-            transform: perspective(600px) rotateY(0deg);
-  }
+.projects_card:hover .projects_card-back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
 }
 /*# sourceMappingURL=main.css.map */
