@@ -52,17 +52,13 @@ const moveImage = document.querySelector(".projects_card-front-img1");
 
 
 
-// $(moveImage).mouseover(function() {
-//     $( this ).fade("active")
-//   })
-//   .mouseout(function() {
-//     $( this ).find( "span" ).text( "mouse out " );
-//   });
-
-$(document).ready(function(){
-    $(moveImage).hover(function(){
-        $(this).css("width", "0px");
-      }, function(){
-      $(this).css("width", "100%");
-    });
-  });
+moveImage.addEventListener('touchstart', function(){
+   
+    this.style.width = '10px';
+    console.log('ok')
+})
+moveImage.addEventListener('touchend', function(){
+   
+  this.style.width = '100%';
+  console.log('ok')
+})
