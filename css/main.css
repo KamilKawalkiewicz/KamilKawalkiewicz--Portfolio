@@ -2050,12 +2050,12 @@ body {
   color: white;
 }
 
-.active {
+.projects .projects_card:hover .projects_card-front {
   -webkit-transform: perspective(600px) rotateY(-180deg);
           transform: perspective(600px) rotateY(-180deg);
 }
 
-.active2 {
+.projects .projects_card:hover .projects_card-back {
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
