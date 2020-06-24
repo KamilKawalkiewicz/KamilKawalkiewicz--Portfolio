@@ -275,7 +275,7 @@
     left: 60px;
     height: 70px;
     width: 70px;
-    z-index: 2;
+    z-index: 1000;
   }
 }
 
@@ -1643,68 +1643,6 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-:root {
-  --activeColor: rgba(255, 255, 0, 1);
-  --backgroundTxtAnim: rgb(0, 0, 0);
-  --black: rgb(36, 36, 36);
-  --white: rgb(241, 240, 240);
-  --color-blue: #0c2ffb;
-  --color-aqua: #2cfcfd;
-  --color-red: #fb203b;
-  --color-yellow: #fefc4b;
-}
-
-html {
-  font-family: "Merriweather", serif;
-}
-
-h1 {
-  font-family: "Oswald";
-}
-
-h2 {
-  font-family: "Sigmar One", cursive;
-}
-
-body {
-  overflow-x: hidden;
-  font-size: 10px;
-  position: relative;
-  margin: 0 auto;
-  background-image: url(../assets/backgounds/main-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 5% center;
-}
-
-@media (min-width: 533px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 115%;
-  }
-}
-
-@media (min-width: 731px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 110%;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-position: center center;
-    background-size: 100% 100%;
-  }
-}
-
 .projects {
   font-size: .7rem;
   min-height: 100vh;
@@ -1981,7 +1919,7 @@ body {
 }
 
 .projects_card-front-img6 {
-  background: url("../assets/projects/NotesPHP.jpg");
+  background: url("../assets/projects/NotesPHP.png");
 }
 
 .projects_card-front .--imgFrontOption {
@@ -2186,6 +2124,12 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .projects_card-back-icon a {
+    font-size: 2rem;
+  }
+}
+
 .projects_card-back-icon a:hover {
   background: var(--black);
   color: var(--activeColor);
@@ -2200,5 +2144,71 @@ body {
     -webkit-transform: perspective(600px) rotateY(0deg);
             transform: perspective(600px) rotateY(0deg);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --activeColor: rgba(255, 255, 0, 1);
+  --backgroundTxtAnim: rgb(0, 0, 0);
+  --black: rgb(36, 36, 36);
+  --white: rgb(241, 240, 240);
+  --color-blue: #0c2ffb;
+  --color-aqua: #2cfcfd;
+  --color-red: #fb203b;
+  --color-yellow: #fefc4b;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-family: "Oswald";
+}
+
+h2 {
+  font-family: "Sigmar One", cursive;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 10px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../assets/backgounds/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% center;
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 115%;
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  body {
+    background-position: center center;
+    background-size: 100% 110%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+}
+
+.aboutMe {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

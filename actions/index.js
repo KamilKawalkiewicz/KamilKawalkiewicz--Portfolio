@@ -47,4 +47,3 @@ document.querySelector(".header_burger").addEventListener("click", function() {
       }
     });
   });
-
