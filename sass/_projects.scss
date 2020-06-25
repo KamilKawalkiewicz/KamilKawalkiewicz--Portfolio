@@ -190,7 +190,7 @@
           }
         &-title{
           margin: 20px;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           color: var(--white);
           @media(min-width:320px) and (min-height:568px) {
             font-size: 1.3rem;
@@ -218,7 +218,7 @@
           }
         }
         &-txt{
-          font-size: 1rem;
+          font-size: 0.9rem;
           margin: 5px 8px;
           line-height: 20px;
           letter-spacing: 1px;
@@ -261,6 +261,7 @@
             transition: 0.4s;
             border-radius: 50%;
             color: var(--white);
+            text-decoration:none;
             @media(min-width:360px){
               font-size: 2.2rem;
             }
