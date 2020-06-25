@@ -40,21 +40,21 @@ body {
   position: relative;
   // max-width: 1600px;
   margin: 0 auto;
-  background-image: url(../assets/backgounds/main-bg.png);
+  background-image: url(../assets/backgounds/tło_szare_jasniejsze_nowe.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 5% center;
+  background-position: center center;
   @media (min-width: 533px) and (orientation: landscape) {
-    background-position: center center;
-    background-size: 100% 115%;
+    // background-position: center center;
+    // background-size: 100% 115%;
   }
   @media (min-width: 731px) and (orientation: landscape) {
-    background-position: center center;
-    background-size: 100% 110%;
+    // background-position: center center;
+    // background-size: 100% 110%;
   }
   @media (min-width: 1024px) {
-    background-position: center center;
-    background-size: 100% 100%;
+    // background-position: center center;
+    // background-size: 100% 100%;
   }
 }
 

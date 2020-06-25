@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -2178,31 +2179,10 @@ body {
   font-size: 10px;
   position: relative;
   margin: 0 auto;
-  background-image: url(../assets/backgounds/main-bg.png);
+  background-image: url(../assets/backgounds/tło_szare_jasniejsze_nowe.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 5% center;
-}
-
-@media (min-width: 533px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 115%;
-  }
-}
-
-@media (min-width: 731px) and (orientation: landscape) {
-  body {
-    background-position: center center;
-    background-size: 100% 110%;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-position: center center;
-    background-size: 100% 100%;
-  }
+  background-position: center center;
 }
 
 .aboutMe {
