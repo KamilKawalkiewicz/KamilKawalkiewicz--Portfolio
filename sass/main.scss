@@ -17,10 +17,13 @@
   box-sizing: border-box;
 }
 :root {
-  --activeColor: rgba(255, 255, 0, 1);
+  --backgroundColorlighter: rgb(34, 40, 49);
+  --backgroundColordarker:  rgb(19, 23, 29);
+  --activeColor: rgb(255, 252, 1);
   --backgroundTxtAnim: rgb(0, 0, 0);
   --black: rgb(36, 36, 36);
   --white: rgb(241, 240, 240);
+  --pink: #ff00c6;
   // animation h2
   --color-blue: #0c2ffb;
   --color-aqua: #2cfcfd;
@@ -40,10 +43,10 @@ body {
   position: relative;
   // max-width: 1600px;
   margin: 0 auto;
-  background-image: url(../assets/backgounds/tło_szare_jasniejsze_nowe.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  // background-image: url(../assets/backgounds/main-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
   @media (min-width: 533px) and (orientation: landscape) {
     // background-position: center center;
     // background-size: 100% 115%;
@@ -57,17 +60,63 @@ body {
     // background-size: 100% 100%;
   }
 }
+.txt-h2 {
+  font-size: 2.5rem;
+  margin: 30px 20px;
+  letter-spacing: 3px;
+  animation-name: shadowAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @media(min-width: 360px){
+    font-size: 2.7rem
+  }
+  @media(min-width: 411px){
+    font-size: 2.9rem
+  }
+  @media(min-width: 411px) and (min-height: 823px){
+    font-size: 3rem
+  }
+  @media(min-width: 768px) and (min-height: 1024px){
+    font-size: 4rem
+  }
+  @media(min-width: 1024px){
+    font-size: 3.5rem;
+    margin: 80px 20px 100px;
+  }
+  @media(min-width: 1024px) and (min-height: 1366px){
+    font-size: 5.5rem
+  }
+
+}
 
 .aboutMe{
   min-height: 100vh;
-  
+  &_container{
+    display: flex;
+    flex-direction: column;
+  }
   &_spn{
     display: block;
     font-size: 1rem;
     font-weight: lighter;
+    letter-spacing: 1px;
     text-align: center;
     margin: 20px 10px;
-  }
+    @media(min-width:360px){
+      font-size: 1.1rem;
+      }
+    @media(min-width: 411px) and (min-height: 823px){
+      font-size: 1.4rem;
+      }
+    @media(min-width: 768px) and (min-height: 1024px){
+      font-size: 1.8rem
+      }
+      @media(min-width: 1024px){
+        font-size: 2rem
+      }
+    }
   &_img{    
     height: 200px;
     width: 200px;
@@ -75,24 +124,117 @@ body {
     margin: 10px auto;
     border-radius: 100px;
     box-shadow: 0px 0px 0px 2px black;
-  }
+    @media(min-width: 768px) and (min-height: 1024px){
+      height: 300px;
+      width: 300px;
+      border-radius: 160px;
+      }
+    @media(min-width: 1024px){
+      height: 300px;
+      width: 300px;
+      border-radius: 160px;
+      }
+    }
   &_name{
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
     margin: 10px 10px;
-  }
+    @media(min-width:360px){
+      font-size: 1.3rem;
+      }
+    @media(min-width: 411px) and (min-height: 823px){
+      font-size: 1.5rem;
+      }
+    @media(min-width: 768px) and (min-height: 1024px){
+      font-size: 2rem;
+      }
+    @media(min-width: 1024px){
+      font-size: 1.8rem;
+      }  
+    }
   &_txt{
     font-size: 1rem;
     margin: 10px;
     letter-spacing: 1px;
-  }
+    text-align: center;
+    @media(min-width:360px){
+      font-size: 1.1rem;
+      }
+    @media(min-width: 411px) and (min-height: 823px){
+      font-size: 1.2rem;
+          }
+    @media(min-width: 768px) and (min-height: 1024px){
+      font-size: 1.8rem;
+          }
+    @media(min-width: 1024px){
+      font-size: 1.5rem;
+          }  
+    }
+
   &_cv{
-    display: flex;
-    height: 50px;
-    width: 100px;
-    &-link{
+    height: 55px;
+    width: 130px;
+    align-self: flex-end;
+    justify-self: center;
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin: 10px;
+    border-radius: 100px;
+    border: 2px solid var(--activeColor);
+    transition: 1.4s;
+    @media(min-width:360px){
+      height: 60px;
+      width: 140px;
+      font-size: 1rem;
+      }
+    @media(min-width: 411px){
+      width: 160px;
+      }
+    @media(min-width: 411px) and (min-height: 823px){
+      font-size: 1.2rem;
+      height: 65px;
+      width: 180px;
+      }
+    @media(min-width: 768px) and (min-height: 1024px){
+      font-size: 1.6rem;
+      height: 80px;
+      width: 250px;
+          }
+    @media(min-width: 1024px){
+      font-size: 1.5rem;
+      height: 80px;
+      width: 250px;
+          }        
+    &:hover{
+      box-shadow: 0 5px 50px 0 var(--pink) inset, 0 5px 50px 0 var(--pink),
+                  0 5px 50px 0 var(--pink) inset, 0 5px 50px 0 var(--pink);
+         
+    }
+  &-link{
+      display: flex;
+      justify-content: center;
+      line-height: 50px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: var(--black);
+      cursor: pointer;
+      @media(min-width:360px){
+        line-height: 55px;
+        }
+        @media(min-width: 411px){
+          line-height: 60px;
+        }
+        @media(min-width: 411px) and (min-height: 823px){
+          line-height: 65px;
+          }
+        @media(min-width: 768px) and (min-height: 1024px){
+          line-height: 80px;
+                  }
+        @media(min-width: 1024px){
+          line-height: 80px;
+                  }    
     }
   }
-}
+} 
 

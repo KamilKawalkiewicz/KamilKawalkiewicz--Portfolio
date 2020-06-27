@@ -1,33 +1,11 @@
-.txt-h2 {
-  font-size: 2.5rem;
-  margin: 20px 20px;
-  letter-spacing: 3px;
-  animation-name: shadowAnimation;
-  animation-duration: 1.5s;
-  animation-delay: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  @media(min-width: 411px) and (min-height: 823px){
-    font-size: 2.8rem
-  }
-  @media(min-width: 768px) and (min-height: 1024px){
-    font-size: 4rem
-  }
-  @media(min-width: 1024px){
-    font-size: 4rem;
-    margin: 80px 20px 100px;
-  }
-  @media(min-width: 1024px) and (min-height: 1366px){
-    font-size: 5rem
-  }
 
-}
 .skills {
   min-height: 110vh;
   display: flex;
   flex-direction: column;
   font-size: .7rem;
   overflow-x: hidden;
+  // background: var(--backgroundColorlighter);
   @media(min-width: 375px) and (min-height: 812px){
     font-size: 1rem;
   }
