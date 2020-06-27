@@ -2131,15 +2131,15 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
-h2 {
-  font-family: "Sigmar One", cursive;
-}
-
 body {
   overflow-x: hidden;
   font-size: 10px;
   position: relative;
   margin: 0 auto;
+  background-image: url(../assets/backgounds/main-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .txt-h2 {
@@ -2327,6 +2327,7 @@ body {
 @media (min-width: 1024px) {
   .aboutMe_txt {
     font-size: 1.5rem;
+    margin: 10px 20px;
   }
 }
 
