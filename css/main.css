@@ -200,6 +200,7 @@
   border-radius: 10px;
   background-image: url(../assets/logo/logo.png);
   background-size: cover;
+  z-index: 999;
 }
 
 @media (min-width: 375px) and (min-height: 667px) {
@@ -271,7 +272,7 @@
 @media (min-width: 1024px) {
   .header_logo {
     position: fixed;
-    top: 40px;
+    top: 35px;
     left: 60px;
     height: 70px;
     width: 70px;
@@ -317,7 +318,7 @@
 
 @media (min-width: 1024px) {
   .header_nav {
-    height: 80px;
+    height: 70px;
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
@@ -466,8 +467,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 150px;
-    height: 80px;
+    width: 180px;
+    height: 70px;
   }
   .header_nav-ul-li a:hover {
     color: var(--activeColor);
@@ -482,7 +483,7 @@
 
 @media (min-width: 1366px) and (min-height: 1024px) {
   .header_nav-ul-li a {
-    height: 100px;
+    height: 80px;
   }
 }
 
@@ -695,6 +696,15 @@
 
 .header_burger span:nth-child(3) {
   bottom: 14px;
+}
+
+.header_background {
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .header_text {
@@ -1171,6 +1181,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 20px 5px;
+  color: var(--textSkillscolor);
+  text-shadow: 0px 2px 7px black;
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
@@ -1384,6 +1396,8 @@
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 15px 5px;
+  color: var(--textSkillscolor);
+  text-shadow: 0px 2px 7px black;
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
@@ -2114,13 +2128,12 @@
 }
 
 :root {
-  --backgroundColorlighter: rgb(34, 40, 49);
-  --backgroundColordarker:  rgb(19, 23, 29);
   --activeColor: rgb(255, 252, 1);
   --backgroundTxtAnim: rgb(0, 0, 0);
   --black: rgb(36, 36, 36);
   --white: rgb(241, 240, 240);
   --pink: #ff00c6;
+  --textSkillscolor: rgba(255, 255, 255, 0.5);
   --color-blue: #0c2ffb;
   --color-aqua: #2cfcfd;
   --color-red: #fb203b;
@@ -2207,6 +2220,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: var(--white);
 }
 
 .aboutMe_spn {
@@ -2304,6 +2318,8 @@ body {
   margin: 10px;
   letter-spacing: 1px;
   text-align: center;
+  color: var(--textSkillscolor);
+  text-shadow: 0px 0px 4px white;
 }
 
 @media (min-width: 360px) {
@@ -2400,7 +2416,7 @@ body {
   line-height: 50px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
 }
 

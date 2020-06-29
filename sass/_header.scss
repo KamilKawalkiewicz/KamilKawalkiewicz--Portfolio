@@ -16,7 +16,7 @@
     border-radius: 10px;
     background-image: url(../assets/logo/logo.png);
     background-size: cover;
-
+    z-index: 999;
     @media (min-width: 375px) and (min-height: 667px) {
       top: 30%;
       height: 75px;
@@ -62,7 +62,7 @@
     }
     @media (min-width: 1024px) {
       position: fixed;
-      top: 40px;
+      top: 35px;
       left: 60px;
       height: 70px;
       width: 70px;
@@ -95,7 +95,7 @@
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
     }
     @media (min-width: 1024px) {
-      height: 80px;
+      height: 70px;
       transform: translateX(0vw);
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
     }
@@ -169,8 +169,8 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 150px;
-            height: 80px;
+            width: 180px;
+            height: 70px;
             &:hover {
               color: var(--activeColor);
               transition: 0.9s;
@@ -180,7 +180,7 @@
             }
           }
           @media (min-width: 1366px) and (min-height: 1024px) {
-            height: 100px;
+            height: 80px;
           }
           &::after {
             content: "";
@@ -309,7 +309,13 @@
       }
     }
   }
-
+  &_background{
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
   // Animated text
   &_text {
     display: block;
