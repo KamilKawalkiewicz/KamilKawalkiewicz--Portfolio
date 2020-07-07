@@ -55,6 +55,11 @@ document.querySelector(".header_burger").addEventListener("click", function() {
 //   }, 500)
 // });
 
+$("#logo").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".header").offset().top
+  }, 800)
+});
 $("#skills, #skills").click(function () {
   $("body,html").animate({
       scrollTop: $(".skills").offset().top
