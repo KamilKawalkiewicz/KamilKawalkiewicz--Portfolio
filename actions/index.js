@@ -47,3 +47,36 @@ document.querySelector(".header_burger").addEventListener("click", function() {
       }
     });
   });
+
+  // scroll button
+// $(".arrow").click(function () {
+//   $("body,html").animate({
+//       scrollTop: $(".wrapper").offset().top
+//   }, 500)
+// });
+
+$("#skills, #skills").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".skills").offset().top
+  }, 800)
+});
+$("#projects,#projects").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".projects").offset().top
+  }, 800)
+});
+$("#aboutMe,#aboutMe").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".aboutMe").offset().top
+  }, 800)
+});
+$("#contact,#contact").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".footer").offset().top
+  }, 800)
+});
+$("#header_btn").click(function () {
+  $("body,html").animate({
+      scrollTop: $(".projects").offset().top
+  }, 800)
+});

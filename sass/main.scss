@@ -11,6 +11,8 @@
 @import "skills";
 @import "projects";
 @import "aboutMe";
+@import "contact";
+@import "footer";
 
 * {
   margin: 0;
@@ -85,104 +87,11 @@ body {
   @media(min-width: 1024px) and (min-height: 1366px){
     font-size: 5.5rem
   }
-
 }
 
 
 
-// Contact
 
-.bar{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto ;
-  justify-content: center;
-  height: 50px;
-  width: 100%;
-  margin: 40px 0;
-  background: var(--activeColor);
-  &__ul{
-      height: 50px;
-      text-align: center;
-      &-link{
-          display: inline-block;
-          color: white;
-          width: 60px;
-          height: 50px;
-          line-height: 50px;
-          font-size: .9rem;
-          cursor: pointer;
-          transition: .2s;
-          text-shadow: 0px 2px 7px rgb(0, 0, 0);
-          &:hover{
-              transition: .4s;
-              transform: scale(1.4);
-          }
-          @media(min-width:411px){
-              font-size: 1rem;
-          }
-          @media(min-width:411px) and (min-height:823px){
-              height: 70px;
-              line-height: 70px;
-              width: 60px;
-              font-size: 1rem;
-          }
-          @media(min-width:533px) and (orientation:landscape){
-              width: 60px;
-              font-size: 1rem;
-          }
-          @media(min-width:736px) and (orientation:landscape){
-              width: 90px;
-              font-size: 1rem;
-          }
-          @media(min-width:768px){
-              height: 70px;
-              line-height: 70px;
-              width: 90px;
-              font-size: 1.4rem;
-          }
-          @media(min-width:1024px){
-              height: 100px;
-              line-height: 100px;
-              width:120px;
-              font-size: 2rem;
-          }
-          @media(min-width:1039px) and (min-height:575px){
-              height: 70px;
-              line-height: 70px;
-              width:160px;
-              font-size: 2rem;
-          }
-          @media(min-width:1366px){
-              height: 85px;
-              line-height: 85px;
-              width: 200px;
-              font-size: 1.7rem;
-          }
-
-      }
-      @media(min-width:411px) and (min-height:823px){
-          height: 70px;
-      }
-      @media(min-width:1024px){
-          height: 100px;
-      }
-      @media(min-width:1366px){
-          height: 85px;
-      }
-  }
-  @media(min-width:411px) and (min-height:823px){
-      height: 70px;
-  }
-  @media(min-width:1024px){
-      height: 100px;
-  }
-  @media(min-width:1039px)and (min-height:575px){
-      height: 70px;
-  }
-  @media(min-width:1366px){
-      height: 85px;
-  }
-}
 
 
 

@@ -19,10 +19,10 @@
         </div>
         <nav class="header_nav">
             <ul class="header_nav-ul">
-                <li class="header_nav-ul-li"><a href="#">Skills</a></li>
-                <li class="header_nav-ul-li"><a href="#">Projects</a></li>
-                <li class="header_nav-ul-li"><a href="#">About me</a></li>
-                <li class="header_nav-ul-li"><a href="#">Contact</a></li>
+                <li class="header_nav-ul-li"><a id="skills" href="#">Skills</a></li>
+                <li class="header_nav-ul-li"><a id="projects" href="#">Projects</a></li>
+                <li class="header_nav-ul-li"><a id="aboutMe" href="#">About me</a></li>
+                <li class="header_nav-ul-li"><a id="contact" href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="header_burger">
@@ -42,7 +42,7 @@
             <span class="header_hooby-svg4"></span>
             <span class="header_hooby-svg5"></span>
         </aside>
-        <button class="header_btn">
+        <button id="header_btn" class="header_btn">
             <span class="header_btn-spn">See my Projects</span>
         </button>
     </header>
@@ -267,7 +267,7 @@
             </span>
         </div>
     </section>
- <!--Contact section -->
+<!--Contact section -->
     <section class="bar">
         <ul class="bar__ul">
             <a target="_blank" class="bar__ul-link" href="kamil.kawalkiewicz@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -277,7 +277,28 @@
             <a target="_blank" class="bar__ul-link" href="https://www.instagram.com/nice_guy_kk/"><i class="fab fa-instagram"></i></a>
         </ul>
     </section>
- 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="navigation">
+            <h3 class="title">Navigation</h3>
+            <ul class="navigation__list">
+                <li id="skills" class="navigation__list-list-item">Skills</li>
+                <li id="projects" class="navigation__list-list-item">Projects</li>
+                <li id="aboutMe" class="navigation__list-list-item">About me</li>
+                <li id="contact" class="navigation__list-list-item">Contact</li>
+            </ul>
+        </div>
+        <div class="follow">
+            <h3 class="title">Follow Me</h3>
+            <a target="_blank" href="https://www.facebook.com/oklumentacja" class="follow__link"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://github.com/KamilKawalkiewicz?tab=repositories" class="follow__link"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/nice_guy_kk/" class="follow__link"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kamil-kawa%C5%82kiewicz-380885187/" class="follow__link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer__p">
+            &copy; 2020 Kamil Kawałkieiwcz
+        </p>
+    </footer>
     <script src="actions/index.js"></script>
 </body>
 
